@@ -29,4 +29,3 @@ def test_invalid_input():
     result = subprocess.run([sys.executable, "sqrt.py", "abc"], capture_output=True, text=True)
     assert result.returncode != 0
     assert "debe ser un entero" in result.stdout
-
